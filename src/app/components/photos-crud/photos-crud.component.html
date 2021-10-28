@@ -1,0 +1,25 @@
+<h2 class="text-primary text-center my-4">CRUD DE FOTOS</h2>
+
+<div class="d-flex justify-content-center">
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Id Foto</label>
+      <input type="number" class="form-control" id="exampleInputEmail1" name="id" [(ngModel)]="id">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Título Foto</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" name="title" [(ngModel)]="title">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">URL Foto</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" name="url" [(ngModel)]="url">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Thumbnail URL Foto</label>
+      <input type="text" class="form-control" id="exampleInputPassword1" namedChunks="thumnail" [(ngModel)]="thumbnailUrl">
+    </div>
+    <div class="d-grid gap-2">
+      <button (click)="savePhoto()" class="btn btn-primary btn-block">Submit</button>
+    </div>
+  </form>
+</div>
